@@ -19,6 +19,7 @@ CHConstructor{
     
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
+        
 #ifndef __OPTIMIZE__
         CYListenServer(6666);
 

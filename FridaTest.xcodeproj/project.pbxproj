@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE774FA02212AAE20052F9F9 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE774F9F2212AAE20052F9F9 /* MDConfig.plist */; };
-		DE774FAA2212AAE30052F9F9 /* libFridaTestDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE774FA92212AAE30052F9F9 /* libFridaTestDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DE774FAA2212AAE30052F9F9 /* libFridaTestDylib.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = DE774FA92212AAE30052F9F9 /* libFridaTestDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DE774FAF2212AAE30052F9F9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE774FAE2212AAE30052F9F9 /* JavaScriptCore.framework */; };
 		DE774FB12212AAE30052F9F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE774FB02212AAE30052F9F9 /* Foundation.framework */; };
 		DE774FB32212AAE30052F9F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE774FB22212AAE30052F9F9 /* UIKit.framework */; };
@@ -37,6 +37,8 @@
 		DE774FEC2212AAE30052F9F9 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DE774FEB2212AAE30052F9F9 /* fishhook.h */; };
 		DE774FEE2212AAE30052F9F9 /* FridaTestDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DE774FED2212AAE30052F9F9 /* FridaTestDylib.h */; };
 		DE774FF02212AAE30052F9F9 /* FridaTestDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DE774FEF2212AAE30052F9F9 /* FridaTestDylib.m */; };
+		DE774FFA2212AB610052F9F9 /* FridaGadget.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = DE774FF92212AB610052F9F9 /* FridaGadget.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DE97C8E1222E205600F1EDA7 /* FridaGadget.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE774FF92212AB610052F9F9 /* FridaGadget.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DE774F952212AAE20052F9F9 /* CopyFiles */ = {
+		DE774F952212AAE20052F9F9 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DE774FAA2212AAE30052F9F9 /* libFridaTestDylib.dylib in CopyFiles */,
+				DE774FFA2212AB610052F9F9 /* FridaGadget.dylib in Copy Files */,
+				DE774FAA2212AAE30052F9F9 /* libFridaTestDylib.dylib in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -101,6 +105,8 @@
 		DE774FEB2212AAE30052F9F9 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		DE774FED2212AAE30052F9F9 /* FridaTestDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FridaTestDylib.h; sourceTree = "<group>"; };
 		DE774FEF2212AAE30052F9F9 /* FridaTestDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridaTestDylib.m; sourceTree = "<group>"; };
+		DE774FF92212AB610052F9F9 /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = FridaGadget.dylib; sourceTree = "<group>"; };
+		DE774FFB2212AB7B0052F9F9 /* FridaGadget.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = FridaGadget.dylib; path = ../FridaGadget.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE97C8E1222E205600F1EDA7 /* FridaGadget.dylib in Frameworks */,
 				DE774FAF2212AAE30052F9F9 /* JavaScriptCore.framework in Frameworks */,
 				DE774FB32212AAE30052F9F9 /* UIKit.framework in Frameworks */,
 				DE774FB12212AAE30052F9F9 /* Foundation.framework in Frameworks */,
@@ -127,6 +134,7 @@
 		DE774F8C2212AAE20052F9F9 = {
 			isa = PBXGroup;
 			children = (
+				DE774FF92212AB610052F9F9 /* FridaGadget.dylib */,
 				DE774F9A2212AAE20052F9F9 /* FridaTest */,
 				DE774FB42212AAE30052F9F9 /* FridaTestDylib */,
 				DE774FAD2212AAE30052F9F9 /* Frameworks */,
@@ -182,6 +190,7 @@
 		DE774FAD2212AAE30052F9F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE774FFB2212AB7B0052F9F9 /* FridaGadget.dylib */,
 				DE774FAE2212AAE30052F9F9 /* JavaScriptCore.framework */,
 				DE774FB02212AAE30052F9F9 /* Foundation.framework */,
 				DE774FB22212AAE30052F9F9 /* UIKit.framework */,
@@ -309,7 +318,7 @@
 				DE774F922212AAE20052F9F9 /* Frameworks */,
 				DE774F932212AAE20052F9F9 /* ShellScript */,
 				DE774F942212AAE20052F9F9 /* Resources */,
-				DE774F952212AAE20052F9F9 /* CopyFiles */,
+				DE774F952212AAE20052F9F9 /* Copy Files */,
 				DE774F962212AAE20052F9F9 /* ShellScript */,
 			);
 			buildRules = (
@@ -610,6 +619,7 @@
 					"$(MonkeyDevPath)/Frameworks/**",
 					"$(MonkeyDevPath)/Librarys/**",
 					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -631,6 +641,7 @@
 					"$(inherited)",
 					"$(MonkeyDevPath)/Frameworks",
 					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)",
 				);
 				MonkeyDevPath = /opt/MonkeyDev;
 				MonkeyDevTheosPath = /opt/theos;
@@ -649,9 +660,10 @@
 					"-lcycript",
 					"-framework",
 					RevealServer,
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
@@ -672,6 +684,7 @@
 					"$(MonkeyDevPath)/Frameworks/**",
 					"$(MonkeyDevPath)/Librarys/**",
 					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -692,6 +705,7 @@
 					"$(inherited)",
 					"$(MonkeyDevPath)/Frameworks",
 					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)",
 				);
 				MonkeyDevPath = /opt/MonkeyDev;
 				MonkeyDevTheosPath = /opt/theos;
@@ -707,9 +721,10 @@
 					"/usr/lib/libstdc++.dylib",
 					"-weak_library",
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -726,11 +741,12 @@
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
 				MONKEYDEV_TARGET_APP = Optional;
+				OTHER_LDFLAGS = "-ObjC";
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = IData.FridaTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.IDataVisibleBurialPointSDKTestDemoYY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -747,11 +763,12 @@
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
 				MONKEYDEV_TARGET_APP = Optional;
+				OTHER_LDFLAGS = "-ObjC";
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = IData.FridaTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.IDataVisibleBurialPointSDKTestDemoYY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
