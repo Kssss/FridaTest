@@ -67,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE1F51252237523500E057C3 /* FridaTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FridaTest.entitlements; sourceTree = "<group>"; };
 		DE774F982212AAE20052F9F9 /* FridaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE774F9B2212AAE20052F9F9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		DE774F9D2212AAE20052F9F9 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		DE774F9A2212AAE20052F9F9 /* FridaTest */ = {
 			isa = PBXGroup;
 			children = (
+				DE1F51252237523500E057C3 /* FridaTest.entitlements */,
 				DE774F9B2212AAE20052F9F9 /* icon.png */,
 				DE774FA32212AAE30052F9F9 /* Info.plist */,
 				DE774F9C2212AAE20052F9F9 /* Scripts */,
@@ -360,6 +362,11 @@
 				TargetAttributes = {
 					DE774F972212AAE20052F9F9 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					DE774FA82212AAE30052F9F9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -731,6 +738,7 @@
 		DE774FF72212AAE30052F9F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FridaTest/FridaTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K294UE6ZZL;
 				ENABLE_BITCODE = NO;
@@ -753,6 +761,7 @@
 		DE774FF82212AAE30052F9F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FridaTest/FridaTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K294UE6ZZL;
 				ENABLE_BITCODE = NO;
